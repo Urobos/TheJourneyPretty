@@ -1,0 +1,9 @@
+<div>
+    <p>Current/Max Health: {{aktualHp}}/{{maxHp}}</p>
+    <p>ManaPoint: {{magicPoints}}</p>
+    <div *ngIf="!noBatlle">
+        <button (click) = "turnExecuteWeapon()">Jebut bronią!!</button>
+        <button (click) = "turnExecuteSpell()">Jebut spelem!</button>
+        <app-select-spell></app-select-spell>
+    </div>    
+</div>

@@ -1,0 +1,39 @@
+<div class="map">
+    <table>
+        <tr>
+            <td></td>
+            <td [class.good] = statusUp></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td [class.good] = statusLeft></td>
+            <td class="good">333</td>
+            <td [class.good] = statusRight></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td [class.good] = statusDown></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<div class="controls">    
+    <table>
+        <tr>
+            <td></td>
+            <td class.good ><button (click) = "moveUp()" *ngIf = "statusUp"><img src="assets/gora.png"></button></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class.good><button (click) = "moveLeft()" *ngIf = "statusLeft"><img src="assets/lewo.png"></button></td>
+            <td></td>
+            <td class.good><button (click) = "moveRight()" *ngIf = "statusRight"><img src="assets/prawo.png"></button></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td class.good><button (click) = "moveDown()" *ngIf = "statusDown"><img src="assets/dol.png"></button></td>
+            <td></td>
+        </tr>
+    </table>
+</div>

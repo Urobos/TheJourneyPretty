@@ -1,0 +1,17 @@
+.good {
+    border: 10px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.map {
+    width: 40%;
+    height: 40%;
+    border: 10px solid black;
+}
+
+.controls {
+    width: 40%;
+    height: 40%;
+    border: 10px solid black;
+}
