@@ -1,4 +1,6 @@
 <h2>Weapons</h2>
-<div class="weapons-menu" *ngFor="let weapon of weapons">
-    <p>Name:{{weapon.name}} <br> Damage:{{weapon.damage}}</p>
+<div class="weaponsList">
+    <div class="weaponsItem" *ngFor="let weapon of weapons">
+        <p>Name:{{weapon.name}} <br> Damage:{{weapon.damage}}</p>
+    </div>
 </div>
