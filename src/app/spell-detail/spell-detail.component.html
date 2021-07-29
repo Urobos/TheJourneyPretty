@@ -1,15 +1,17 @@
-<div *ngIf="spell">
-    
-    <h2>{{spell.name | uppercase}} details</h2>
-    <div><span>id: </span>{{spell.id}}</div>
-    <div>
-        <label for="spell-name">Spell name: </label>
-        <input id="spell-name" [(ngModel)]="spell.name" placeholder="name">
+<div class="spellDetail">
+    <div *ngIf="spell">
+        
+        <h2>{{spell.name | uppercase}} details</h2>
+        <div><span>id: </span>{{spell.id}}</div>
+        <div>
+            <label for="spell-name">Spell name: </label>
+            <input id="spell-name" [(ngModel)]="spell.name" placeholder="name">
+        </div>
+        <div><span>damage: <span>{{spell.damage}}</span></span></div>
+        <div><span>Mana cost: </span>{{spell.manaCost}}</div>
+
     </div>
-    <div><span>damage: <span>{{spell.damage}}</span></span></div>
-    <div><span>Mana cost: </span>{{spell.manaCost}}</div>
 
+    <button (click)="save()">save</button>
+    <button (click)="goBack()">go back</button>
 </div>
-
-<button (click)="save()">save</button>
-<button (click)="goBack()">go back</button>
