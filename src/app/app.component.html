@@ -1,10 +1,22 @@
-<h1>{{title}}</h1>
-<app-hero></app-hero>
-<nav *ngIf="noBatlle">
-    <ul>    
-        <li class="active"><a  routerLink="map">Mapa</a></li>    
-        <li><a routerLink="ekwipunek">Ekwipunek</a></li>    
-        <li><a routerLink="spells">Czary</a></li>    
-    </ul>
-</nav>
-<router-outlet></router-outlet>
+<div>
+    <div class="name">
+        <h1>{{title}}</h1>
+    </div>
+    <div class="hero-panel">
+        <app-hero></app-hero>
+    </div>
+    <div class="control-panel">
+        <nav *ngIf="noBatlle; else Fight">
+            <h2>Navigation</h2>
+            <ul class=nav-menu>    
+                <li class="active"><a  routerLink="map">Map</a></li>    
+                <li><a routerLink="ekwipunek">Equipment</a></li>    
+                <li><a routerLink="spells">Spells</a></li>    
+            </ul>
+        </nav>
+        <ng-template #Fight><span class="message">Fight!</span></ng-template>
+    </div>
+    <div class="aktual-view">
+        <router-outlet></router-outlet>
+    </div>
+</div>

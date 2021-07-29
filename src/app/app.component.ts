@@ -7,7 +7,7 @@ import { HelpfulValuesService } from './helpful-values.service'; //KONTROLA WALK
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'my-project';
+  title = 'TheJourney';
 
   noBatlle!: boolean;
 

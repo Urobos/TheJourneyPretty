@@ -1,0 +1,85 @@
+.name {
+    text-align: center;
+    width: 100%;
+    height: 20%;
+    margin: 0%;
+    border-bottom: 5px solid black;
+}
+
+.hero-panel {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 20%;
+    height: 80%;
+    position: fixed;
+    border-right: 5px solid black;
+}
+
+.control-panel {
+    width: 80%;
+    height: 20%;
+    margin-left: 20%;
+    position: fixed;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+}
+
+.aktual-view {
+    width: 80%;
+    height: 60%;
+    margin-left: 20%;
+    margin-top: 10%;
+    position: fixed;
+}
+
+.message {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5%;
+    font-size: 40px;
+}
+
+.nav-menu {
+    padding: 0;
+    margin: auto;
+    max-width: 1000px;
+    list-style-type: none;
+  
+    /* flexbox */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+  
+a {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    min-width: 70px;
+    margin: .5rem auto;
+    box-sizing: border-box;
+  
+    /* flexbox */
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+  
+a:hover {
+    background-color: #000;
+}
+
+h2 {
+    text-align: center;
+}
