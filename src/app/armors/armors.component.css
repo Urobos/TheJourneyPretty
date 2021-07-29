@@ -1,0 +1,12 @@
+h2 {
+    text-align: center;
+}
+
+.armorList {
+    display: flex;
+    flex-direction: row;
+}
+
+.armorsItem {
+    margin: 10px;
+}
