@@ -5,13 +5,13 @@
 }
 
 .map {
-    width: 40%;
-    height: 40%;
-    border: 10px solid black;
+    width: 50%;
+    height: 50%;
+    margin: 20px;
 }
 
 .controls {
-    width: 40%;
-    height: 40%;
-    border: 10px solid black;
+    width: 50%;
+    height: 50%;
+    margin: 20px;
 }
